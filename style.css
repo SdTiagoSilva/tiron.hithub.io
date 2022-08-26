@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-weight: normal;
+    box-sizing:border-box;
+}
+
+
+img {max-width: 100%;}
+ul {list-style: none;}
+a {text-decoration: none;}
+h1 {font-size: 2em; color: rgb(0, 0, 0); padding: 10px;}
+h2 {font-size: 1.5em; color: rgb(0, 0, 0); padding: 10px;}
+p {font-size: 1em; color: rgb(0, 0, 0);}
+hr {margin-left: 10%; margin-right: 10%}
+
+
+
+body {
+    background-attachment: fixed;
+    background-image: url(./img/bg.jpg);
+    width: 100%;
+    background-size: 100%;
+}
+
+/*cabeçalho*/
+
+.logo {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    margin-left: 40px;
+    min-height: 70px;
+    min-width: 70px;
+}
+
+
+.cabecalho {
+    width: 100%;
+    background-color: #008584;
+    min-height: 150px;
+    top: 0;
+    box-shadow: 0px 5px 10px #004557 ;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*menu do site*/
+
+.menu {
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.menu li {
+    float: left;
+    font-size: 1.5em;
+    transition: 0.3s;
+}
+.menu li a {
+    color: #fff;
+    margin-left: 50px;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    display: block;
+}
+
+.menu li:hover {
+    transform: scale(1.3);
+    color: white; 
+    text-shadow: white 0 0 0.2em
+}
+
+
+/*Barra de Pesquisa*/
+
+.cabecalho input {
+    float: left;
+    border-radius: 5px 0 0 5px;
+    width: 85%;
+    height: 49px;
+    padding-left: 15px;
+    display: none;
+}
+
+.cabecalho form {
+    width: 30%;
+    float: right;
+    position: relative;
+    display: none;
+}
+
+.cabecalho button {
+    width: 15%;
+    float: right;
+    padding: 13px 10px;
+    background-color: #8B4513;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    border: 2px solid white;
+    position: absolute;
+    display: none;
+}
+
+
+
+/*Social Icons*/
+
+.social-icons {
+    float: right;
+    padding-right: 80px;
+}
+.social-icons a {
+    color: #fff;
+    float: left;
+    margin-left: 20px;
+}
+.btn-facebook:hover {
+    color: #3b5998;
+    transition: 0.3s;
+    text-shadow: 0px 0px 5px  #fff;
+
+}
+.btn-twitter:hover {
+    color: #54a4d6 ;
+    transition: 0.3s;
+    text-shadow: 0px 0px 5px #fff;
+}
+.btn-instagram:hover {
+    color: #C13584 ;
+    transition: 0.3s;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+/* Conteúdo do site*/
+
+.principal {
+    width: 100%;
+    min-height: 100vh;
+    float: left;
+    padding: 20px 8%;
+    text-align: center;
+}
+
+.principal h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #004557;
+}
+
+.principal article h1 {
+    padding-top: 50px;
+}
+.principal h2 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
+    color: #006666;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.principal p {
+    text-align: justify;
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    color: black;
+
+}
+
+/*Informações adicionais*/
+
+.informaçoes{
+ text-align: center;
+ align-items: center;
+ display: flex;
+ flex-direction: column;
+ margin: 80px;
+}
+.informaçoes h1 {
+    margin-bottom: 5px;
+}
+
+.informaçoes p:hover {
+    color: #008584;
+    
+}
+
+/*Página de Contato*/
+
+
+#contato {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px 8%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5em;
+    margin-top: 40px;
+}
+
+#contato hr {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    margin-top: 50px;
+}
+
+#contato-info {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #006666;
+    font-size: 1.2em;
+    justify-content: left;
+
+}
+
+#contato h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 3.5em;
+    color: #004557;
+    
+}
+
+#contato a {
+    padding-top: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #004557;
+    padding: 10px;
+    padding-bottom: 20px;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding: 30px;
+}
+
+.minhas-paginas i {
+    margin-right: 5px;
+}
+
+
+/*Formulário Email*/
+
+.email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    min-height: 500px;
+    background: #008584;
+    color: white;
+    box-shadow: 5px 5px 15px #004557;
+    border-radius: 5px;
+    justify-content: center;
+    margin: 50px;
+}
+
+.email h2 {
+    font-size: 2rem;
+    color: white;
+    margin: 2rem;
+}
+
+.email form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.email label {
+    color: white;
+    font-size: 17px;
+    margin-bottom: 4px;
+    text-align: left;
+}
+
+.email input {
+    padding: 15px;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+    outline: none;
+}
+
+.email input:focus {
+    border-radius: 16px;
+}
+
+.email textarea{
+    padding: 30px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+
+.email textarea:focus{
+    border-radius: 16px;
+}
+
+.email button {
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid white;
+    transition: all 1s;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+
+}
+
+.email button:hover {
+    background: white;
+    color: #004557;
+    border-radius: 16px;
+}
+
+/*Página de obrigado*/
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.text {
+    font-size: 45px;
+    color: #004557;
+    margin-bottom: 30px;
+}
+
+.paragrafo {
+    color: #006666;
+    margin-bottom: 50px;
+}
+
+.btn {
+    padding: 15px 15px;
+    background: #004557;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: all 0.5;
+}
+
+.btn:hover {
+    border-radius: 16px;
+}
+
+/*rodapé da página*/
+
+.rodape {
+    width: 100%;
+    background-color: #006666;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.rodape p {
+    color: #fff;
+    font-size: 0.7em;
+    text-align: center;
+}
