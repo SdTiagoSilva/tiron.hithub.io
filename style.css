@@ -1,3 +1,7 @@
+@media only screen and (max-device-width: 900px) {
+    /* .menu { width:100%; } */
+    }
+
 * {
     margin: 0;
     padding: 0;
@@ -12,8 +16,7 @@ ul {list-style: none;}
 a {text-decoration: none;}
 h1 {font-size: 2em; color: rgb(0, 0, 0); padding: 10px;}
 h2 {font-size: 1.5em; color: rgb(0, 0, 0); padding: 10px;}
-p {font-size: 1em; color: rgb(0, 0, 0);}
-hr {margin-left: 10%; margin-right: 10%}
+p {font-size: 3em; color: rgb(0, 0, 0);}
 
 
 
@@ -39,7 +42,7 @@ body {
 .cabecalho {
     width: 100%;
     background-color: #008584;
-    min-height: 150px;
+    min-height: 100px;
     top: 0;
     box-shadow: 0px 5px 10px #004557 ;
     align-items: center;
@@ -135,29 +138,32 @@ body {
 }
 
 /* Conteúdo do site*/
+.home h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #004557;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
 
 .principal {
     width: 100%;
     min-height: 100vh;
-    float: left;
     padding: 20px 8%;
     text-align: center;
+    float: left;
+    flex-flow: row nowrap;
+    flex-direction: row;
+    display: flex;
 }
 
-.principal h1 {
-    font-family: 'Josefin Sans', sans-serif;
-    color: #004557;
-}
-
-.principal article h1 {
-    padding-top: 50px;
-}
 .principal h2 {
     font-family: 'Amatic SC', cursive;
     font-size: 2em;
     color: #006666;
-    text-align: left;
-    margin-top: 30px;
+    text-align: center;
+    margin-top: 50px;
 }
 
 .principal p {
@@ -165,7 +171,13 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 1em;
     color: black;
+    display: block;
+    line-height: 2em;
+}
 
+.principal img {
+    width: 50%;
+    height: 100%;
 }
 
 /*Informações adicionais*/
@@ -173,10 +185,10 @@ body {
 .informaçoes{
  text-align: center;
  align-items: center;
- display: flex;
- flex-direction: column;
- margin: 80px;
+ justify-content: center;
+ display: block;
 }
+
 .informaçoes h1 {
     margin-bottom: 5px;
 }
@@ -184,6 +196,10 @@ body {
 .informaçoes p:hover {
     color: #008584;
     
+}
+
+.informaçoes p {
+    text-align: center;
 }
 
 /*Página de Contato*/
@@ -198,7 +214,6 @@ body {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    line-height: 1.5em;
     margin-top: 40px;
 }
 
@@ -291,12 +306,13 @@ body {
 }
 
 .email textarea{
-    padding: 30px;
+    padding: 10px;
     outline: none;
     border: 0;
     font-size: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     transition: all 0.5s;
+
 }
 
 .email textarea:focus{
@@ -355,6 +371,27 @@ body {
 
 .btn:hover {
     border-radius: 16px;
+}
+
+/*Botão do Whatsapp*/
+
+.btn-whatsapp {
+    margin: 20px;
+    position: fixed;
+    bottom: 15px;
+    animation: pulse 2s infinite;
+    border-radius: 50%;
+    background-color: #34af23;
+    text-align: center;
+    align-items: center;
+}
+
+.btn-whatsapp img {
+    width: 55px;
+}
+
+.btn-whatsapp:hover {
+    background-color: #2e9221;
 }
 
 /*rodapé da página*/
